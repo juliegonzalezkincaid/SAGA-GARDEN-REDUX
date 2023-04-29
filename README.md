@@ -26,7 +26,15 @@ Create a new database called `garden` and run the SQL in the `database.sql` file
 
 1. Add the `redux-logger` middleware to the project for debugging
 1. Add `redux-sagas` to the project to make an API request. The route `http://localhost:5000/api/plant` returns an array of plants. Display that array on the `PlantList` component on load.
+===import createSagaMiddleware from 'redux-saga';
+===import { takeLatest } from 'redux-saga/effects';
+
 1. Add all of the plant fields to the form to allow adding a new plant to the database. The server `post` route to do this is available at `http://localhost:5000/api/plant`.
+==yield axios post
+==yield put 
+
+
+
 1. Add a `Delete` button for each plant to allow it to be removed from the database. The server `delete` route to do this is available at `http://localhost:5000/api/plant/1`,  for the plant with the `id` of `1`.
 
 ## Stretch Goals
